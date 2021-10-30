@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const msg = require('../helpers/messages')
-const User = require('../models/users')
+const User = require('../models/user')
 const authService = require('../services/auth.service')
 
 router.post('/registrer', async (req, res) => {
