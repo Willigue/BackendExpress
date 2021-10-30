@@ -1,6 +1,7 @@
 const jwt = require('jsonwebtoken')
 const User = require('../models/user')
 const bcrypt = require('bcrypt')
+const msg = require('../helpers/messages')
 
 const authService = {
     signToken: async (id) => {
@@ -41,3 +42,5 @@ const authService = {
         }
     }
 }
+
+module.exports = authService

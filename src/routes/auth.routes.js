@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const msg = require('../helpers/messages')
 const User = require('../models/users')
-const authService = require('../services/')
+const authService = require('../services/auth.service')
 
 router.post('/registrer', async (req, res) => {
     try{
@@ -26,3 +26,5 @@ router.post('/login', async (req, res) => {
         res.send(error)
     }
 })
+
+module.exports = router
