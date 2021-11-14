@@ -1,0 +1,8 @@
+{
+    "apidoc": {
+        "title": "Documentación API Finapp"
+    },
+    "name": "Backend Finapp",
+    "version": "0.0.1",
+    "description": "Documentación en línea de los endpoints del backend"
+}
