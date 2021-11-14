@@ -93,7 +93,7 @@ router.get('/profile', async (req, res) => {
  *       }
  *   }
  */
-router.post('/registrer', async (req, res) => {
+router.post('/register', async (req, res) => {
     try{
         const user = new User(req.body)
         let token = await authService.registrer(user)
