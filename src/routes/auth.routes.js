@@ -110,6 +110,7 @@ router.post('/register', async (req, res) => {
  * @apiDescription ingreso de usuarios usando a la plataforma usando email y password
  * @apiParam {string} email E-mail del usuario que ingresa
  * @apiParam {string} password Contraseña del usuario
+ * @apiSampleRequest  https://mintic18.herokuapp.com/auth/login
  */
 
 router.post('/login', async (req, res) => {
