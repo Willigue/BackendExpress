@@ -1,9 +1,9 @@
-const moongose = require('mongoose')
+const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const Income = new Schema({
     user: {
-        type: moongose.Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'User'
     },
     value: {
@@ -24,4 +24,4 @@ Income.pre('save', function(next){
     next()
 })
 
-module.exports = moongose.model('incomes', Income)
+module.exports = mongoose.model('incomes', Income)
