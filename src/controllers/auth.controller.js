@@ -1,5 +1,5 @@
 const User = require('../models/user')
-const authService = require('../models/user')
+const authService = require('../services/auth.service')
 const msg = require('../helpers/messages')
 const { validationResult } = require('express-validator')
 
